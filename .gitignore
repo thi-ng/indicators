@@ -1,0 +1,7 @@
+build/
+coverage/
+lib/
+node_modules/
+*.js
+*.tgz
+*.svg

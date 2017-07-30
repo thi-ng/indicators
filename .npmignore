@@ -1,0 +1,12 @@
+.vscode/
+build/
+coverage/
+*.ts
+*.tgz
+*.html
+*.svg
+!*.d.ts
+!*.js
+tsconfig.json
+bundle.js
+webpack.config.js
