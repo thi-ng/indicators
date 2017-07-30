@@ -1,0 +1,41 @@
+{
+    "name": "@thi.ng/indicators",
+    "version": "0.0.2",
+    "description": "ES6 iterators of technical indicators for statistical / financial analysis",
+    "main": "index.js",
+    "scripts": {
+        "build": "rm -rf *.js && tsc --declaration && node",
+        "clean": "rm -rf *.js node_modules",
+        "test": "tsc -p test && mocha build/test/*.js"
+    },
+    "keywords": [
+        "finance",
+        "technical analysis",
+        "iterators",
+        "statistics",
+        "typescript"
+    ],
+    "author": "Karsten Schmidt <k+npm@thi.ng>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thi-ng/indicators.git"
+    },
+    "bugs": {
+        "url": "https://github.com/thi-ng/indicators/issues"
+    },
+    "homepage": "https://github.com/thi-ng/indicators",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@thi.ng/dcons": "0.*",
+        "@thi.ng/iterators": "3.*"
+    },
+    "devDependencies": {
+        "@types/mocha": "2.2.*",
+        "@types/node": "6.0.*"
+    },
+    "typings": "index.d.ts",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    }
+}
