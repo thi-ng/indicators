@@ -3,11 +3,20 @@ import partition from "@thi.ng/iterators/partition";
 /**
  * https://en.wikipedia.org/wiki/Moving_average#Weighted_moving_average
  *
- * @param weights
+ * @param weights period or array of weights
  * @param src
  */
-export default function* wma(weights: number[], src: Iterable<number>) {
-    const period = weights.length;
+export default function* wma(weights: number | number[], src: Iterable<number>) {
+    let period;
+    if (typeof weights === "number") {
+        period = weights | 0;
+        weights = [];
+        for (let i = 0; i < period; i++) {
+            weights.push(i + 1);
+        }
+    } else {
+        period = weights.length;
+    }
     let wsum = 0;
     for (let i = 0; i < period; i++) {
         wsum += weights[i];
