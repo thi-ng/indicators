@@ -12,6 +12,7 @@ All indicators consume iterables of plain numbers and have configurable periods.
 - [Bollinger Bands](https://github.com/thi-ng/indicators/blob/master/src/bollinger.ts)
 - [Donchian Channel](https://github.com/thi-ng/indicators/blob/master/src/donchian.ts)
 - [EMA (Exponential Moving Average)](https://github.com/thi-ng/indicators/blob/master/src/ema.ts)
+- [HMA (Hull Moving Average)](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/hull-moving-average)
 - [Momentum](https://github.com/thi-ng/indicators/blob/master/src/momentum.ts)
 - [ROC (Rate of change)](https://github.com/thi-ng/indicators/blob/master/src/roc.ts)
 - [RSI (Relative Strength Index)](https://github.com/thi-ng/indicators/blob/master/src/rsi.ts)
